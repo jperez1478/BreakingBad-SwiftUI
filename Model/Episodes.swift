@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct episodes: Decodable, Identifiable {
+struct episodes: Decodable, Identifiable{
     var id: Int?
     var episode_id: Int
     var title: String

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,8 +16,6 @@
 		8E89B32826C9AFD500361763 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89B32726C9AFD500361763 /* EpisodesView.swift */; };
 		8E89B32A26C9AFF500361763 /* CharactherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89B32926C9AFF500361763 /* CharactherViewModel.swift */; };
 		8E89B32C26C9B00400361763 /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89B32B26C9B00400361763 /* EpisodeViewModel.swift */; };
-		8E89B32F26C9B49000361763 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8E89B32E26C9B49000361763 /* SDWebImageSwiftUI */; };
-		8E89B33126C9B4A600361763 /* CharactherDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89B33026C9B4A600361763 /* CharactherDetailView.swift */; };
 		8E89B33326C9F11300361763 /* CharacthersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89B33226C9F11300361763 /* CharacthersView.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +31,6 @@
 		8E89B32726C9AFD500361763 /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
 		8E89B32926C9AFF500361763 /* CharactherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactherViewModel.swift; sourceTree = "<group>"; };
 		8E89B32B26C9B00400361763 /* EpisodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
-		8E89B33026C9B4A600361763 /* CharactherDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactherDetailView.swift; sourceTree = "<group>"; };
 		8E89B33226C9F11300361763 /* CharacthersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacthersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -42,7 +39,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E89B32F26C9B49000361763 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				8E89B32726C9AFD500361763 /* EpisodesView.swift */,
-				8E89B33026C9B4A600361763 /* CharactherDetailView.swift */,
 				8E89B33226C9F11300361763 /* CharacthersView.swift */,
 			);
 			path = Views;
@@ -133,7 +128,6 @@
 			);
 			name = BreakingBad;
 			packageProductDependencies = (
-				8E89B32E26C9B49000361763 /* SDWebImageSwiftUI */,
 			);
 			productName = BreakingBad;
 			productReference = 8E89B30C26C9A71500361763 /* BreakingBad.app */;
@@ -163,7 +157,6 @@
 			);
 			mainGroup = 8E89B30326C9A71500361763;
 			packageReferences = (
-				8E89B32D26C9B49000361763 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 8E89B30D26C9A71500361763 /* Products */;
 			projectDirPath = "";
@@ -195,7 +188,6 @@
 				8E89B32826C9AFD500361763 /* EpisodesView.swift in Sources */,
 				8E89B32226C9A81300361763 /* Characthers.swift in Sources */,
 				8E89B32426C9ABB800361763 /* Episodes.swift in Sources */,
-				8E89B33126C9B4A600361763 /* CharactherDetailView.swift in Sources */,
 				8E89B33326C9F11300361763 /* CharacthersView.swift in Sources */,
 				8E89B31226C9A71500361763 /* MainView.swift in Sources */,
 				8E89B32C26C9B00400361763 /* EpisodeViewModel.swift in Sources */,
@@ -332,7 +324,7 @@
 				DEVELOPMENT_TEAM = 8C93KVSWF7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BreakingBad/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,7 +346,7 @@
 				DEVELOPMENT_TEAM = 8C93KVSWF7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BreakingBad/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,25 +380,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		8E89B32D26C9B49000361763 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		8E89B32E26C9B49000361763 /* SDWebImageSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8E89B32D26C9B49000361763 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
-			productName = SDWebImageSwiftUI;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8E89B30426C9A71500361763 /* Project object */;
 }

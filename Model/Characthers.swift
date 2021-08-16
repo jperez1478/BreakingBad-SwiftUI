@@ -7,14 +7,20 @@
 
 import Foundation
 
-struct Characthers: Decodable, Identifiable {
-    var id: Int  
-    var char_id: Int?
-    var name: String
-    var img: URL
-    var status: String?
-    var nickname: String?
+struct Characthers: Decodable {
+    let charId: Int
+    let name: String
+    let occupation:[String]
+    let img: String
+    let status: String
+    let nickname: String
     
+    var imgURL:URL {
+        URL(string:img)!
+    }
 }
 
+extension Characthers : Identifiable {
+    var id: Int { charId }
+}
 

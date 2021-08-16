@@ -27,11 +27,12 @@ struct CharacthersView: View {
         NavigationView {
             ScrollView { //if content extends add scrollview effect
                 LazyVGrid(columns: columns, content: {
-                    ForEach(0..<50) { characthers  in
+                    ForEach(charactherViewModel.characthers) { characthers  in
                         RoundedRectangle(cornerRadius: 10)
                             .frame(height: 150)
                     }
                 })
+                .padding()
             } //: end of nav
             .navigationTitle("Breaking Bad Cast")
             .onAppear {
