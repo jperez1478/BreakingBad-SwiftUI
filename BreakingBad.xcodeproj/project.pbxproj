@@ -3,23 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8E89B31026C9A71500361763 /* BreakingBadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89B30F26C9A71500361763 /* BreakingBadApp.swift */; };
-		8E89B31226C9A71500361763 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89B31126C9A71500361763 /* ContentView.swift */; };
+		8E89B31226C9A71500361763 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89B31126C9A71500361763 /* MainView.swift */; };
 		8E89B31426C9A71700361763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E89B31326C9A71700361763 /* Assets.xcassets */; };
 		8E89B31726C9A71700361763 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E89B31626C9A71700361763 /* Preview Assets.xcassets */; };
+		8E89B32226C9A81300361763 /* Characthers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89B32126C9A81300361763 /* Characthers.swift */; };
+		8E89B32426C9ABB800361763 /* Episodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89B32326C9ABB800361763 /* Episodes.swift */; };
+		8E89B32626C9AFCB00361763 /* CharacthersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89B32526C9AFCB00361763 /* CharacthersView.swift */; };
+		8E89B32826C9AFD500361763 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89B32726C9AFD500361763 /* EpisodesView.swift */; };
+		8E89B32A26C9AFF500361763 /* CharactherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89B32926C9AFF500361763 /* CharactherViewModel.swift */; };
+		8E89B32C26C9B00400361763 /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89B32B26C9B00400361763 /* EpisodeViewModel.swift */; };
+		8E89B32F26C9B49000361763 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8E89B32E26C9B49000361763 /* SDWebImageSwiftUI */; };
+		8E89B33126C9B4A600361763 /* CharactherDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89B33026C9B4A600361763 /* CharactherDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8E89B30C26C9A71500361763 /* BreakingBad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakingBad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E89B30F26C9A71500361763 /* BreakingBadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingBadApp.swift; sourceTree = "<group>"; };
-		8E89B31126C9A71500361763 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8E89B31126C9A71500361763 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8E89B31326C9A71700361763 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E89B31626C9A71700361763 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8E89B31826C9A71700361763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E89B32126C9A81300361763 /* Characthers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characthers.swift; sourceTree = "<group>"; };
+		8E89B32326C9ABB800361763 /* Episodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episodes.swift; sourceTree = "<group>"; };
+		8E89B32526C9AFCB00361763 /* CharacthersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacthersView.swift; sourceTree = "<group>"; };
+		8E89B32726C9AFD500361763 /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
+		8E89B32926C9AFF500361763 /* CharactherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactherViewModel.swift; sourceTree = "<group>"; };
+		8E89B32B26C9B00400361763 /* EpisodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
+		8E89B33026C9B4A600361763 /* CharactherDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactherDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E89B32F26C9B49000361763 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +52,9 @@
 		8E89B30326C9A71500361763 = {
 			isa = PBXGroup;
 			children = (
+				8E89B32026C9A7EE00361763 /* Model */,
+				8E89B31E26C9A7DB00361763 /* Views */,
+				8E89B31F26C9A7E100361763 /* ViewModel */,
 				8E89B30E26C9A71500361763 /* BreakingBad */,
 				8E89B30D26C9A71500361763 /* Products */,
 			);
@@ -53,7 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				8E89B30F26C9A71500361763 /* BreakingBadApp.swift */,
-				8E89B31126C9A71500361763 /* ContentView.swift */,
+				8E89B31126C9A71500361763 /* MainView.swift */,
 				8E89B31326C9A71700361763 /* Assets.xcassets */,
 				8E89B31826C9A71700361763 /* Info.plist */,
 				8E89B31526C9A71700361763 /* Preview Content */,
@@ -67,6 +86,34 @@
 				8E89B31626C9A71700361763 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8E89B31E26C9A7DB00361763 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E89B32526C9AFCB00361763 /* CharacthersView.swift */,
+				8E89B32726C9AFD500361763 /* EpisodesView.swift */,
+				8E89B33026C9B4A600361763 /* CharactherDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8E89B31F26C9A7E100361763 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8E89B32926C9AFF500361763 /* CharactherViewModel.swift */,
+				8E89B32B26C9B00400361763 /* EpisodeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8E89B32026C9A7EE00361763 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E89B32126C9A81300361763 /* Characthers.swift */,
+				8E89B32326C9ABB800361763 /* Episodes.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +132,9 @@
 			dependencies = (
 			);
 			name = BreakingBad;
+			packageProductDependencies = (
+				8E89B32E26C9B49000361763 /* SDWebImageSwiftUI */,
+			);
 			productName = BreakingBad;
 			productReference = 8E89B30C26C9A71500361763 /* BreakingBad.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +162,9 @@
 				Base,
 			);
 			mainGroup = 8E89B30326C9A71500361763;
+			packageReferences = (
+				8E89B32D26C9B49000361763 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 8E89B30D26C9A71500361763 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +191,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E89B31226C9A71500361763 /* ContentView.swift in Sources */,
+				8E89B32A26C9AFF500361763 /* CharactherViewModel.swift in Sources */,
+				8E89B32826C9AFD500361763 /* EpisodesView.swift in Sources */,
+				8E89B32226C9A81300361763 /* Characthers.swift in Sources */,
+				8E89B32426C9ABB800361763 /* Episodes.swift in Sources */,
+				8E89B32626C9AFCB00361763 /* CharacthersView.swift in Sources */,
+				8E89B33126C9B4A600361763 /* CharactherDetailView.swift in Sources */,
+				8E89B31226C9A71500361763 /* MainView.swift in Sources */,
+				8E89B32C26C9B00400361763 /* EpisodeViewModel.swift in Sources */,
 				8E89B31026C9A71500361763 /* BreakingBadApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +388,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8E89B32D26C9B49000361763 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8E89B32E26C9B49000361763 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E89B32D26C9B49000361763 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8E89B30426C9A71500361763 /* Project object */;
 }
