@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct CharacthersView: View {
     //MARK: -Properties
@@ -28,8 +29,11 @@ struct CharacthersView: View {
             ScrollView { //if content extends add scrollview effect
                 LazyVGrid(columns: columns, content: {
                     ForEach(charactherViewModel.characthers) { characthers  in
-                        RoundedRectangle(cornerRadius: 10)
+                        WebImage(url: characthers.imgURL)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
                             .frame(height: 150)
+                            .cornerRadius(10)
                     }
                 })
                 .padding()

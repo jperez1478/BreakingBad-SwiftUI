@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E849DF626CB1DEA007B4427 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8E849DF526CB1DEA007B4427 /* SDWebImageSwiftUI */; };
 		8E89B31026C9A71500361763 /* BreakingBadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89B30F26C9A71500361763 /* BreakingBadApp.swift */; };
 		8E89B31226C9A71500361763 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89B31126C9A71500361763 /* MainView.swift */; };
 		8E89B31426C9A71700361763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E89B31326C9A71700361763 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E849DF626CB1DEA007B4427 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +130,7 @@
 			);
 			name = BreakingBad;
 			packageProductDependencies = (
+				8E849DF526CB1DEA007B4427 /* SDWebImageSwiftUI */,
 			);
 			productName = BreakingBad;
 			productReference = 8E89B30C26C9A71500361763 /* BreakingBad.app */;
@@ -157,6 +160,7 @@
 			);
 			mainGroup = 8E89B30326C9A71500361763;
 			packageReferences = (
+				8E849DF426CB1DEA007B4427 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 8E89B30D26C9A71500361763 /* Products */;
 			projectDirPath = "";
@@ -380,6 +384,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8E849DF426CB1DEA007B4427 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8E849DF526CB1DEA007B4427 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E849DF426CB1DEA007B4427 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8E89B30426C9A71500361763 /* Project object */;
 }
