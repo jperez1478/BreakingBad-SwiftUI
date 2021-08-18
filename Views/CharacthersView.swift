@@ -14,11 +14,11 @@ struct CharacthersView: View {
     @ObservedObject var charactherViewModel = CharactherViewModel() //observed object
     
     //colum propertiers
-    
     let columns = [
         GridItem(.flexible(minimum: 100, maximum: 200), spacing: 16), //100 to 20 width
         GridItem(.flexible(minimum: 100, maximum: 200), spacing: 16), //2nd column
         GridItem(.flexible(minimum: 100, maximum: 200), spacing: 16), //3rd column
+        
     ]
     
     
@@ -29,11 +29,21 @@ struct CharacthersView: View {
             ScrollView { //if content extends add scrollview effect
                 LazyVGrid(columns: columns, content: {
                     ForEach(charactherViewModel.characthers) { characthers  in
-                        WebImage(url: characthers.imgURL)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(height: 150)
-                            .cornerRadius(10)
+                        
+                        //adding navlink
+                        NavigationLink(
+                            destination: CharactherDetailView(char: characthers),
+                            label: {
+                                    WebImage(url: characthers.imgURL)
+                                        .resizable()
+                                        .indicator(.activity)
+                                        .scaledToFill()
+                                        .clipped()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(height: 150)
+                                        .cornerRadius(8)
+                            })
+                      
                     }
                 })
                 .padding()

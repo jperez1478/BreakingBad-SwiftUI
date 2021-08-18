@@ -7,11 +7,14 @@
 
 import Foundation
 
-struct episodes: Decodable, Identifiable{
-    var id: Int?
-    var episode_id: Int
-    var title: String
-    var season: String 
-    var episode:String
+struct Episodes: Decodable {
+    let episodeId: Int
+    let title: String
+    let season: String
+    let episode:String
     
+}
+
+extension Episodes: Identifiable {
+    var id: Int { episodeId }
 }
