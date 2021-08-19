@@ -12,12 +12,13 @@ struct CharacthersView: View {
     //MARK: -Properties
     
     @ObservedObject var charactherViewModel = CharactherViewModel() //observed object
+    @ObservedObject var quoteViewModel = QuoteViewModel()
     
     //colum propertiers
     let columns = [
-        GridItem(.flexible(minimum: 100, maximum: 200), spacing: 16), //100 to 20 width
-        GridItem(.flexible(minimum: 100, maximum: 200), spacing: 16), //2nd column
-        GridItem(.flexible(minimum: 100, maximum: 200), spacing: 16), //3rd column
+        GridItem(.flexible(minimum: 100, maximum: 200), spacing: 3), //100 to 20 width
+        GridItem(.flexible(minimum: 100, maximum: 200), spacing: 3), //2nd column
+        GridItem(.flexible(minimum: 100, maximum: 200), spacing: 3), //3rd column
         
     ]
     
@@ -40,23 +41,24 @@ struct CharacthersView: View {
                                                 .scaledToFill()
                                                 .clipped()
                                                 .aspectRatio(contentMode: .fit)
-                                                                  .frame(height: 150)
-                                                                  .cornerRadius(8)
-                                                            }
-                                                Text(characthers.name).font(.system(size: 14)).foregroundColor(.brandPrimary).lineLimit(2)
-                                                    }.padding()
-                                               
+                                                .frame(height: 150)
+                                                .cornerRadius(8)
+                                            }
+                                    
+                                            Text(characthers.name).font(.system(size: 14)).foregroundColor(.brandPrimary).lineLimit(2)
+                                }.padding()
+                                        
                             })
                         }
                     }
                 })
-            }
-                
             } //: end of nav
             .navigationTitle("Breaking Bad Cast")
             .onAppear {
                 charactherViewModel.fetchCharacters()
+                
             }
+                }
             }
         }
 

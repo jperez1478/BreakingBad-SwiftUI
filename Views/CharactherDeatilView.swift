@@ -13,19 +13,30 @@ import SDWebImageSwiftUI
 
 struct CharactherDetailView: View  {
     var char: Characthers
+   // var quotes: Quote
     var body: some View {
         ScrollView{
-            WebImage(url: char.imgURL)
-                .resizable()
-                .indicator(.activity)
-                .aspectRatio(contentMode: .fit)
-            VStack {
-                Text(char.nickname)
-                    .font(.largeTitle)
-                    .foregroundColor(.brandPrimary)
+            VStack{
+                WebImage(url: char.imgURL)
+                    .resizable()
+                    .indicator(.activity)
+                    .aspectRatio(contentMode: .fit)
+                VStack(alignment: .leading) {
+                        Text(char.nickname)
+                            .font(.largeTitle)
+                            .foregroundColor(.brandPrimary)
+                        
+                        HStack(alignment: .bottom) {
+                            Text(char.status)
+                                .font(.headline)
+                            
+                        }
+         
                     
-                Text(char.status)
-                    .font(.headline)
+                }
+ 
+                
+                
 
                 
             }
