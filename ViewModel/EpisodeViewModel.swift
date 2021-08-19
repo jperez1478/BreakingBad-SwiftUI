@@ -10,7 +10,7 @@ import Foundation
 //obersevable object responsable to be able to updated my views
 class EpisodesViewModel: ObservableObject {
     
-    @Published var episodes = [Episodes]()
+    @Published var episode = [Episodes]()
     //Wrapping with @published upadte as change
     
     //responsiblke to provide characthers
@@ -24,9 +24,9 @@ class EpisodesViewModel: ObservableObject {
                     let decoder = JSONDecoder() //Decode data
                     decoder.keyDecodingStrategy = .convertFromSnakeCase //to work with the camel case i had in api
                     do {
-                        let episodes = try decoder.decode([Episodes].self, from: data)
-                        DispatchQueue.main.async {
-                            self.episodes = episodes
+                        let episode = try decoder.decode([Episodes].self, from: data)
+                        DispatchQueue.main.async{
+                            self.episode = episode
                         }
                     } catch {
                         print(error.localizedDescription)

@@ -29,16 +29,9 @@ struct CharactherDetailView: View  {
 
                 
             }
-            //hstack to display char info
-            HStack {
-                Text(char.name)
-                    .font(.headline)
-                    .foregroundColor(.brandPrimary)
-    
-                        }
         }
-                }
-            }
+    }
+}
     
 
 

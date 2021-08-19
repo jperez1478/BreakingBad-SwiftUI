@@ -12,19 +12,40 @@ struct EpisodesView: View {
     
     @ObservedObject var episodesViewModel = EpisodesViewModel() //observable obj
     
+    let columns = [GridItem(.flexible())]
+    
     
     //MARK: -Body
     var body: some View {
         NavigationView{
-            List{
-                        
-                    
+            ZStack{
+                List {
+                    ForEach(episodesViewModel.episode) { episode in
+                        VStack(alignment: .leading) {
+                            Text("Season\(episode.season)")
+                                .font(.title2)
+                            Text("Episode\(episode.episode)")
+                                .font(.subheadline)
+                                
+                            
+                            HStack {
+                                Text(episode.title).lineLimit(1)
+                                    .font(.headline)
+                            }
+                        }
+                    }
                 }
-                .navigationTitle("Episodes")
+            }
+            .navigationTitle("Episodes")
+            .onAppear {
+        episodesViewModel.fetchEpisodes()
+            }
+        }
+
            
                 }
             }
-        }
+      // }
 
 
 //MARK: Preview

@@ -29,32 +29,37 @@ struct CharacthersView: View {
             ScrollView { //if content extends add scrollview effect
                 LazyVGrid(columns: columns, content: {
                     ForEach(charactherViewModel.characthers) { characthers  in
-                        
-                        //adding navlink
-                        NavigationLink(
-                            destination: CharactherDetailView(char: characthers),
-                            label: {
-                                    WebImage(url: characthers.imgURL)
-                                        .resizable()
-                                        .indicator(.activity)
-                                        .scaledToFill()
-                                        .clipped()
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(height: 150)
-                                        .cornerRadius(8)
+                        VStack {
+                            VStack {
+                                
+                            }
+                            //adding navlink
+                            NavigationLink(
+                                destination: CharactherDetailView(char: characthers),
+                                label: {
+                                        WebImage(url: characthers.imgURL)
+                                            .resizable()
+                                            .indicator(.activity)
+                                            .scaledToFill()
+                                            .clipped()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(height: 150)
+                                            .cornerRadius(8)
+                            
                             })
-                      
+                        }
                     }
                 })
-                .padding()
+            }
+                
             } //: end of nav
             .navigationTitle("Breaking Bad Cast")
             .onAppear {
                 charactherViewModel.fetchCharacters()
             }
+            }
         }
-    }
-}
+
 
 
 //MARK: -Preview
