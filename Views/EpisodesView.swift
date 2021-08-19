@@ -12,7 +12,7 @@ struct EpisodesView: View {
     
     @ObservedObject var episodesViewModel = EpisodesViewModel() //observable obj
     
-    let columns = [GridItem(.flexible())]
+
     
     
     //MARK: -Body

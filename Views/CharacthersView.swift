@@ -30,22 +30,22 @@ struct CharacthersView: View {
                 LazyVGrid(columns: columns, content: {
                     ForEach(charactherViewModel.characthers) { characthers  in
                         VStack {
-                            VStack {
-                                
-                            }
-                            //adding navlink
-                            NavigationLink(
-                                destination: CharactherDetailView(char: characthers),
+                            NavigationLink(destination: CharactherDetailView(char: characthers),
                                 label: {
+                                VStack{
+                                    VStack{
                                         WebImage(url: characthers.imgURL)
-                                            .resizable()
-                                            .indicator(.activity)
-                                            .scaledToFill()
-                                            .clipped()
-                                            .aspectRatio(contentMode: .fit)
-                                            .frame(height: 150)
-                                            .cornerRadius(8)
-                            
+                                                .resizable()
+                                                .indicator(.activity)
+                                                .scaledToFill()
+                                                .clipped()
+                                                .aspectRatio(contentMode: .fit)
+                                                                  .frame(height: 150)
+                                                                  .cornerRadius(8)
+                                                            }
+                                                Text(characthers.name).font(.system(size: 14)).foregroundColor(.brandPrimary).lineLimit(2)
+                                                    }.padding()
+                                               
                             })
                         }
                     }
