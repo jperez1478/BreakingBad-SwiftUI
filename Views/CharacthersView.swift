@@ -27,9 +27,9 @@ struct CharacthersView: View {
     //MARK: -Body
     var body: some View {
         NavigationView {
-            ScrollView { //if content extends add scrollview effect
-                LazyVGrid(columns: columns, content: {
-                    ForEach(charactherViewModel.characthers) { characthers  in
+            ScrollView {
+                LazyVGrid(columns: columns, spacing: 16) {
+                    ForEach(charactherViewModel.characthers) {characthers in
                         VStack {
                             NavigationLink(destination: CharactherDetailView(char: characthers),
                                 label: {
@@ -44,23 +44,24 @@ struct CharacthersView: View {
                                                 .frame(height: 150)
                                                 .cornerRadius(10)
                                             }
-                                    
                                             Text(characthers.name).font(.system(size: 14)).foregroundColor(.brandPrimary).lineLimit(2)
-                                }.padding()
-                                        
-                            })
+                                    }
+                                })
                         }
-                    }
-                })
-            } //: end of nav
-            .navigationTitle("Breaking Bad Cast")
+                }
+            }
+        }
+            //: end of nav
+            .navigationTitle("Breaking bad Cast")
             .onAppear {
                 charactherViewModel.fetchCharacters()
                 
             }
-                }
-            }
         }
+    }
+   
+}
+
 
 
 

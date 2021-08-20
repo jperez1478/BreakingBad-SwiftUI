@@ -11,35 +11,36 @@ import SDWebImageSwiftUI
 
 
 struct CharactherCell: View {
+    let characthers: Characthers
    // var char: Characthers
     var body: some View {
-        
         ZStack { //background layer of cell
-            VStack(alignment: .leading, spacing: 0) {
-                Image("icon")
+            VStack(alignment: .leading) {
+                WebImage(url: characthers.imgURL)
                     .resizable()
-                    .scaledToFill()
-                    .padding(5)
-                    .clipped()
-                    .frame(width: 200, height: 200)
+                    .indicator(.activity)
+                    .aspectRatio(contentMode: .fit)
                 
-                VStack(alignment: .center, spacing: 0  ) {
-                   Text("Walter White")
-                    .frame(width: 200, height: 40, alignment: .center)
+                VStack(alignment: .center) {
+                    Text(characthers.name)
+                    .font(.headline)
                     
-                    HStack{
-                            Text("Heinsenburg")
-                                .font(.headline)
-                                .bold()
-                                .foregroundColor(.black)
-                                .frame(width: 200, height: 40, alignment: .center)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 20).fill(Color.brandPrimary.opacity(0.50))
-                                    )
-                                .frame(width: 100, height: 100)
-                    }
+            
                     
-                }
+                    Text(characthers .nickname)
+                        .font(.headline)
+                        .bold()
+                        .padding(.horizontal,10)
+                        .padding(.vertical,10)
+                        .padding(.bottom,0)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10).fill(Color.brandPrimary.opacity(0.50))
+                                )
+                        
+                
+            
+                }//:end of 2vsatck
+               // .padding(.horizontal, 8)
             }
             
         }//:end zstack
@@ -50,10 +51,10 @@ struct CharactherCell: View {
     }
 }
 
-struct CharactherCell_Previews: PreviewProvider {
-    static var previews: some View {
-        CharactherCell()
-            .previewLayout(.sizeThatFits)
-            .padding()
-    }
-}
+//struct CharactherCell_Previews: PreviewProvider {
+  //  static var previews: some View {
+    //    CharactherCell(characthers: Characthers()))
+  //          .previewLayout(.sizeThatFits)
+    //        .padding()
+  //  }
+//}
