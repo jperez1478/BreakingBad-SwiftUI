@@ -22,10 +22,25 @@
 		8EB1F37B26CDF2EB000E98C8 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1F37A26CDF2EB000E98C8 /* Quote.swift */; };
 		8EB1F37D26CDF45F000E98C8 /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1F37C26CDF45F000E98C8 /* QuoteViewModel.swift */; };
 		8EB1F38226CDF904000E98C8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB1F38126CDF904000E98C8 /* Launch Screen.storyboard */; };
+		8EB1F39226CF507A000E98C8 /* EpisodesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1F39126CF507A000E98C8 /* EpisodesListView.swift */; };
+		8EB1F39526CF7301000E98C8 /* CharactherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1F39426CF7301000E98C8 /* CharactherCell.swift */; };
 		8EEAA0D826CD29D000C521B6 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEAA0D726CD29D000C521B6 /* ColorExt.swift */; };
 		8EEAA0DA26CD2A2D00C521B6 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEAA0D926CD2A2D00C521B6 /* EpisodesView.swift */; };
 		8EEAA0DC26CD3A6600C521B6 /* EpisodesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEAA0DB26CD3A6600C521B6 /* EpisodesRowView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8EB1F38D26CF0340000E98C8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8E5B7D8B26CC1DB100AEB753 /* CharactherDeatilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactherDeatilView.swift; sourceTree = "<group>"; };
@@ -44,6 +59,8 @@
 		8EB1F37A26CDF2EB000E98C8 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		8EB1F37C26CDF45F000E98C8 /* QuoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewModel.swift; sourceTree = "<group>"; };
 		8EB1F38126CDF904000E98C8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "/Users/jessicaperez/Desktop/BreakingBad/BreakingBad/Preview Content/Launch Screen.storyboard"; sourceTree = "<absolute>"; };
+		8EB1F39126CF507A000E98C8 /* EpisodesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesListView.swift; sourceTree = "<group>"; };
+		8EB1F39426CF7301000E98C8 /* CharactherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactherCell.swift; sourceTree = "<group>"; };
 		8EEAA0D726CD29D000C521B6 /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
 		8EEAA0D926CD2A2D00C521B6 /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
 		8EEAA0DB26CD3A6600C521B6 /* EpisodesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesRowView.swift; sourceTree = "<group>"; };
@@ -64,6 +81,7 @@
 		8E89B30326C9A71500361763 = {
 			isa = PBXGroup;
 			children = (
+				8EB1F39326CF7294000E98C8 /* dif aproach */,
 				8EE66FD226CD28CB00AE13EF /* Color+Extension */,
 				8E89B32026C9A7EE00361763 /* Model */,
 				8E89B31E26C9A7DB00361763 /* Views */,
@@ -109,6 +127,7 @@
 				8E5B7D8B26CC1DB100AEB753 /* CharactherDeatilView.swift */,
 				8EEAA0D926CD2A2D00C521B6 /* EpisodesView.swift */,
 				8EEAA0DB26CD3A6600C521B6 /* EpisodesRowView.swift */,
+				8EB1F39126CF507A000E98C8 /* EpisodesListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,6 +153,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		8EB1F39326CF7294000E98C8 /* dif aproach */ = {
+			isa = PBXGroup;
+			children = (
+				8EB1F39426CF7301000E98C8 /* CharactherCell.swift */,
+			);
+			path = "dif aproach";
+			sourceTree = "<group>";
+		};
 		8EE66FD226CD28CB00AE13EF /* Color+Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +179,7 @@
 				8E89B30826C9A71500361763 /* Sources */,
 				8E89B30926C9A71500361763 /* Frameworks */,
 				8E89B30A26C9A71500361763 /* Resources */,
+				8EB1F38D26CF0340000E98C8 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -221,6 +249,8 @@
 				8E89B32A26C9AFF500361763 /* CharactherViewModel.swift in Sources */,
 				8EB1F37926CDEDD0000E98C8 /* Video.swift in Sources */,
 				8EEAA0D826CD29D000C521B6 /* ColorExt.swift in Sources */,
+				8EB1F39226CF507A000E98C8 /* EpisodesListView.swift in Sources */,
+				8EB1F39526CF7301000E98C8 /* CharactherCell.swift in Sources */,
 				8E89B32226C9A81300361763 /* Characthers.swift in Sources */,
 				8E89B32426C9ABB800361763 /* Episodes.swift in Sources */,
 				8EB1F37B26CDF2EB000E98C8 /* Quote.swift in Sources */,

@@ -29,6 +29,7 @@ struct CharactherDetailView: View  {
                         HStack(alignment: .bottom) {
                             Text(char.status)
                                 .font(.headline)
+                           
                             
                         }
          

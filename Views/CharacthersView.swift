@@ -16,9 +16,9 @@ struct CharacthersView: View {
     
     //colum propertiers
     let columns = [
-        GridItem(.flexible(minimum: 100, maximum: 200), spacing: 3), //100 to 20 width
-        GridItem(.flexible(minimum: 100, maximum: 200), spacing: 3), //2nd column
-        GridItem(.flexible(minimum: 100, maximum: 200), spacing: 3), //3rd column
+        GridItem(.flexible(minimum: 100, maximum: 200), spacing: 1.2), //100 to 20 width
+        GridItem(.flexible(minimum: 100, maximum: 200), spacing: 1.2), //2nd column
+        GridItem(.flexible(minimum: 100, maximum: 200), spacing: 1.2), //3rd column
         
     ]
     
@@ -42,7 +42,7 @@ struct CharacthersView: View {
                                                 .clipped()
                                                 .aspectRatio(contentMode: .fit)
                                                 .frame(height: 150)
-                                                .cornerRadius(8)
+                                                .cornerRadius(10)
                                             }
                                     
                                             Text(characthers.name).font(.system(size: 14)).foregroundColor(.brandPrimary).lineLimit(2)
