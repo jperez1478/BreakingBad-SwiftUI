@@ -12,29 +12,29 @@ struct EpisodesView: View {
     
     @ObservedObject var episodesViewModel = EpisodesViewModel() //observable obj
     
-
-    
-    
     //MARK: -Body
     var body: some View {
         NavigationView{
             ZStack{
                 List {
-                    ForEach(episodesViewModel.episode) { episode in
+                    ForEach(episodesViewModel.episode)  { episode in
                         VStack(alignment: .leading) {
-                            Text("Season\(episode.season)")
-                                .font(.title2)
-                            Text("Episode\(episode.episode)")
-                                .font(.subheadline)
-                                
+                           Text("Season\(episode.season)")
+                            .font(.title2)
+                            Text("Season\(episode.episode)")
+                             .font(.title2)
                             
                             HStack {
-                                Text(episode.title).lineLimit(1)
+                                Text("Episode\(episode.episode)")
+                                    .font(.subheadline)
+                                Text(episode.title).lineLimit(3)
                                     .font(.headline)
                             }
                         }
                     }
-                }
+                } //: end of list
+                
+                
             }
             .navigationTitle("Episodes")
             .onAppear {

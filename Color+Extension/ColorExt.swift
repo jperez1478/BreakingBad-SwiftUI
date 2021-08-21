@@ -11,5 +11,7 @@ extension Color {
     static let brandPrimary = Color("BrandPrimaryColor")
     
     static let cellColor = Color("c")
+    
+    static let backgroundColor = Color("b")
 
 }
