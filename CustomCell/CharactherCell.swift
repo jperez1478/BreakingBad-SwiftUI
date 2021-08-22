@@ -24,6 +24,7 @@ struct CharactherCell: View {
                     
                     Text(characthers.name.capitalized)
                         .foregroundColor(.black)
+                        .bold()
                         .lineLimit(3)
                         .clipped()
                         .padding(.horizontal,0)
@@ -40,13 +41,13 @@ struct CharactherCell: View {
                         .frame(maxWidth:400)
                         .overlay(
                             RoundedRectangle(cornerRadius: 10).fill(Color.brandPrimary.opacity(0.45)))
-                            .clipped()
+                                                        .clipped()
                         
                         Spacer()
                       }
                     
                   }.frame(width: 126 ,height: 260)
-                .background(Color.backgroundColor)
+                .background(Color(#colorLiteral(red: 0.1166864397, green: 0.9601618974, blue: 0.7682653386, alpha: 1)))
                           .cornerRadius(12)
                           .shadow(color: .brandPrimary,radius: 8, x:0.0, y:0.0)
  
