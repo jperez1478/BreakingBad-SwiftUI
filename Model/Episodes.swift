@@ -16,9 +16,10 @@ struct Episodes: Decodable {
     
 }
 
+//created my extension to be able to work with identifiable 
 extension Episodes: Identifiable {
     var id: Int { episodeId }
 }
 
 
-//created my own data to be able to add video function on her
+
