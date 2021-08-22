@@ -61,7 +61,7 @@ struct CharactherDetailView: View  {
                     Spacer()
                 }//: end of Vstack
               .frame(width: 300, height: 525) //structure of card view
-             .background(Color.cellColor)
+             .background(Color.green)
                         .cornerRadius(12)
                         .shadow(color: .brandPrimary,radius: 10)
     }
