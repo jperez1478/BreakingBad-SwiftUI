@@ -21,7 +21,7 @@ struct EpisodesView: View {
                         Section(header: Text(season.title)) {
                             ForEach(season.episodes) { episode in
                                 Text(episode.title)
-                                    .foregroundColor(.brandPrimary)
+                                    
                             }
                         }
                     }
