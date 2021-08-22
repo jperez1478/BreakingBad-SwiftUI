@@ -11,6 +11,7 @@ struct EpisodesView: View {
         
         @ObservedObject var episodesViewModel = EpisodesViewModel() //observable obj
         
+        @State private var selectedEpisode: Episodes?
         
         
     
