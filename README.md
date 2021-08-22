@@ -1,4 +1,5 @@
-# BreakingBad-SwiftU
+# BreakingBad-SwiftUI
+# Take Home Project 
 
 Features:
 Consumption of API (https://breakingbadapi.com/api/characters) to fetch the characters list. (URL Session, Codable)
