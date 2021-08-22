@@ -3,7 +3,7 @@
 //  BreakingBad
 //
 //  Created by Jessica Perez on 8/22/21.
-//
+//this is the vuiew model 
 
 import Foundation
 
