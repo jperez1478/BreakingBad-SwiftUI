@@ -10,7 +10,7 @@ import Foundation
 //obersevable object responsable to be able to updated my views
 class EpisodesViewModel: ObservableObject {
     
-    @Published var episode = [Episodes]()
+    @Published var groupedEpisodes: [SeasonCategory] = []
     //Wrapping with @published upadte as change
     
     //responsiblke to provide characthers
@@ -24,9 +24,12 @@ class EpisodesViewModel: ObservableObject {
                     let decoder = JSONDecoder() //Decode data
                     decoder.keyDecodingStrategy = .convertFromSnakeCase //to work with the camel case i had in api
                     do {
-                        let episode = try decoder.decode([Episodes].self, from: data)
+                        let episodes = try decoder.decode([Episode].self, from: data)
                         DispatchQueue.main.async{
-                            self.episode = episode
+                            let dictionary = Dictionary(grouping: episodes) { $0.seasonNumber }
+                            let sortedDictionary = dictionary.sorted { $0.key < $1.key }
+                            let groupedEpisodes = sortedDictionary.compactMap { SeasonCategory(seasonNumber: $0.key, episodes: $0.value) }
+                            self.groupedEpisodes = groupedEpisodes
                         }
                     } catch {
                         print(error.localizedDescription)
