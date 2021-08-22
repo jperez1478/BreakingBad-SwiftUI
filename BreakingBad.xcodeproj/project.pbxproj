@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8E849DF626CB1DEA007B4427 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8E849DF526CB1DEA007B4427 /* SDWebImageSwiftUI */; };
+		8E878CBF26D2C53A00FA880B /* SeasonCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E878CBE26D2C53A00FA880B /* SeasonCategory.swift */; };
+		8E878CC126D2C55B00FA880B /* EpisodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E878CC026D2C55B00FA880B /* EpisodesViewModel.swift */; };
 		8E89B31026C9A71500361763 /* BreakingBadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89B30F26C9A71500361763 /* BreakingBadApp.swift */; };
 		8E89B31226C9A71500361763 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89B31126C9A71500361763 /* AppTabView.swift */; };
 		8E89B31426C9A71700361763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E89B31326C9A71700361763 /* Assets.xcassets */; };
@@ -19,10 +21,8 @@
 		8EB1F39726CF9245000E98C8 /* CharactherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1F39626CF9245000E98C8 /* CharactherView.swift */; };
 		8EB1F39B26D041A7000E98C8 /* CharactherDeatailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1F39A26D041A7000E98C8 /* CharactherDeatailView.swift */; };
 		8EEAA0D826CD29D000C521B6 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEAA0D726CD29D000C521B6 /* ColorExt.swift */; };
-		8EF6605526D2C2D6009CD0B3 /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF6605426D2C2D6009CD0B3 /* EpisodeViewModel.swift */; };
-		8EF6605926D2C305009CD0B3 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF6605826D2C305009CD0B3 /* Episode.swift */; };
-		8EF6605B26D2C309009CD0B3 /* SeasonCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF6605A26D2C309009CD0B3 /* SeasonCategory.swift */; };
 		8EF6605D26D2C43B009CD0B3 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF6605C26D2C43B009CD0B3 /* EpisodesView.swift */; };
+		8EF6605F26D2C4CA009CD0B3 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF6605E26D2C4CA009CD0B3 /* Episode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +39,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8E878CBE26D2C53A00FA880B /* SeasonCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonCategory.swift; sourceTree = "<group>"; };
+		8E878CC026D2C55B00FA880B /* EpisodesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewModel.swift; sourceTree = "<group>"; };
 		8E89B30C26C9A71500361763 /* BreakingBad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakingBad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E89B30F26C9A71500361763 /* BreakingBadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingBadApp.swift; sourceTree = "<group>"; };
 		8E89B31126C9A71500361763 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
@@ -52,10 +54,8 @@
 		8EB1F39626CF9245000E98C8 /* CharactherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactherView.swift; sourceTree = "<group>"; };
 		8EB1F39A26D041A7000E98C8 /* CharactherDeatailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactherDeatailView.swift; sourceTree = "<group>"; };
 		8EEAA0D726CD29D000C521B6 /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
-		8EF6605426D2C2D6009CD0B3 /* EpisodeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
-		8EF6605826D2C305009CD0B3 /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
-		8EF6605A26D2C309009CD0B3 /* SeasonCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonCategory.swift; sourceTree = "<group>"; };
 		8EF6605C26D2C43B009CD0B3 /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
+		8EF6605E26D2C4CA009CD0B3 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +125,8 @@
 		8E89B31F26C9A7E100361763 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				8EF6605426D2C2D6009CD0B3 /* EpisodeViewModel.swift */,
 				8E89B32926C9AFF500361763 /* CharactherViewModel.swift */,
+				8E878CC026D2C55B00FA880B /* EpisodesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -135,8 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				8E89B32126C9A81300361763 /* Characthers.swift */,
-				8EF6605826D2C305009CD0B3 /* Episode.swift */,
-				8EF6605A26D2C309009CD0B3 /* SeasonCategory.swift */,
+				8EF6605E26D2C4CA009CD0B3 /* Episode.swift */,
+				8E878CBE26D2C53A00FA880B /* SeasonCategory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -236,15 +236,15 @@
 			files = (
 				8EF6605D26D2C43B009CD0B3 /* EpisodesView.swift in Sources */,
 				8EB1F39B26D041A7000E98C8 /* CharactherDeatailView.swift in Sources */,
+				8E878CC126D2C55B00FA880B /* EpisodesViewModel.swift in Sources */,
 				8E89B32A26C9AFF500361763 /* CharactherViewModel.swift in Sources */,
+				8E878CBF26D2C53A00FA880B /* SeasonCategory.swift in Sources */,
+				8EF6605F26D2C4CA009CD0B3 /* Episode.swift in Sources */,
 				8EEAA0D826CD29D000C521B6 /* ColorExt.swift in Sources */,
-				8EF6605526D2C2D6009CD0B3 /* EpisodeViewModel.swift in Sources */,
-				8EF6605926D2C305009CD0B3 /* Episode.swift in Sources */,
 				8EB1F39526CF7301000E98C8 /* CharactherCell.swift in Sources */,
 				8E89B32226C9A81300361763 /* Characthers.swift in Sources */,
 				8E89B31226C9A71500361763 /* AppTabView.swift in Sources */,
 				8EB1F39726CF9245000E98C8 /* CharactherView.swift in Sources */,
-				8EF6605B26D2C309009CD0B3 /* SeasonCategory.swift in Sources */,
 				8E89B31026C9A71500361763 /* BreakingBadApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

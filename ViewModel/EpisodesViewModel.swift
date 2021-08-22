@@ -1,10 +1,11 @@
 //
-//  EpisodeViewModel.swift
+//  EpisodesViewModel.swift
 //  BreakingBad
 //
-//  Created by Jessica Perez on 8/15/21.
+//  Created by Jessica Perez on 8/22/21.
 //
 
+import Foundation
 import Foundation
 
 //obersevable object responsable to be able to updated my views

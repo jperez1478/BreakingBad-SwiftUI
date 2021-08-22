@@ -2,7 +2,7 @@
 //  SeasonCategory.swift
 //  BreakingBad
 //
-//  Created by Mike Schoonen on 22/08/2021.
+//  Created by Jessica Perez on 8/22/21.
 //
 
 import Foundation

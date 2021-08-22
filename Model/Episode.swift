@@ -2,7 +2,7 @@
 //  Episode.swift
 //  BreakingBad
 //
-//  Created by Jessica Perez on 8/15/21.
+//  Created by Jessica Perez on 8/22/21.
 //
 
 import Foundation
@@ -17,7 +17,7 @@ struct Episode: Decodable {
     var episodeNumber: Int { Int(episode.trimmingCharacters(in: .whitespacesAndNewlines)) ?? 0 }
 }
 
-//created my extension to be able to work with identifiable 
+//created my extension to be able to work with identifiable
 extension Episode: Identifiable {
     var id: Int { episodeId }
 }
