@@ -12,6 +12,6 @@ extension Color {
     
     
     
-    static let backgroundColor = Color("b")
+    static let cellColor = Color("cellColor")
 
 }
